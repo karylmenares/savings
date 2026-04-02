@@ -618,7 +618,7 @@ function lgout(){document.getElementById('ap').style.display='none';document.get
 // Boot: load cloud data first, then show login
 document.addEventListener('DOMContentLoaded',async()=>{
   await initData();
-  if(!db._pin)document.getElementById('ph').textContent='PIN por defecto: 1234';
+  if(!db._pin)document.getElementById('ph').textContent='Ahorrar te da libertad';
 });
 document.addEventListener('keydown',e=>{if(document.getElementById('lg').style.display!=='none'){if(e.key>='0'&&e.key<='9')kp(e.key);else if(e.key==='Backspace')bkPin();}});
 
